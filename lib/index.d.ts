@@ -39,6 +39,7 @@ export interface VictoryCandlestickProps
   candleColors?: {
     positive?: string;
     negative?: string;
+    neutral?: string;
   };
   candleRatio?: number;
   candleWidth?: number | Function;

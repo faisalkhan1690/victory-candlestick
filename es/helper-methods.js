@@ -158,7 +158,7 @@ var getDataStyles = function (datum, style, props) {
   }
 
   style = style || {};
-  var candleColor = datum._open > datum._close ? props.candleColors.negative : props.candleColors.positive;
+  var candleColor = datum.is_total?props.candleColors.neutral:datum._open > datum._close ? props.candleColors.negative : props.candleColors.positive;
   var fill = style.fill || candleColor;
   var strokeColor = style.stroke;
   var stroke = isTransparent(strokeColor) ? fill : strokeColor || "black";
