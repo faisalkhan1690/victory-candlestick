@@ -29,5 +29,6 @@
   "scripts": {
     "version": "yarn run nps build-libs && nps build-dists"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "gitHead": "ebafd849d2ded3f1d2aabf0d6e64dcbd48e4c9d6"
 }
